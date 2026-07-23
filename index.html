@@ -1,1 +1,252 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>BioWithKhushi - Biology & Biotechnology Insights</title>
+    <meta name="description" content="Explore cutting-edge biology, genetics, and biotechnology content with Dr. Khushi. Learn about CRISPR, DNA sequencing, and career opportunities in life sciences.">
+    <meta name="keywords" content="biology, genetics, biotechnology, CRISPR, research, education">
+    <meta name="author" content="Dr. Khushi">
+    
+    <!-- Open Graph Tags (Social Media) -->
+    <meta property="og:title" content="BioWithKhushi - Biology & Biotechnology Insights">
+    <meta property="og:description" content="Explore cutting-edge biology, genetics, and biotechnology content with Dr. Khushi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biowithkhushi.com">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="fas fa-dna"></i> BioWithKhushi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container-fluid position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 py-5">
+                    <h1 class="display-3 fw-bold mb-4">Welcome to BioWithKhushi</h1>
+                    <p class="lead mb-4">Explore the fascinating world of biology, genetics, and biotechnology. Learn from expert insights and stay updated with cutting-edge research.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#articles" class="btn btn-primary btn-lg">
+                            <i class="fas fa-book"></i> Read Articles
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/images/hero-image.jpg" alt="Biology and biotechnology illustration" class="img-fluid rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Articles Section -->
+        <section id="articles" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-4 fw-bold mb-2 text-center">Featured Articles</h2>
+                <p class="text-center text-muted mb-5">Discover insightful articles on biology, genetics, and career opportunities</p>
+                
+                <!-- Filter/Search -->
+                <div class="row mb-5">
+                    <div class="col-md-6 mx-auto">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search articles...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Articles Grid -->
+                <div id="articlesContainer" class="row g-4">
+                    <!-- Articles will be loaded here via JavaScript -->
+                    <div class="col-12 text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categories Section -->
+        <section id="categories" class="py-5">
+            <div class="container">
+                <h2 class="display-4 fw-bold mb-2 text-center">Explore Categories</h2>
+                <p class="text-center text-muted mb-5">Choose from our diverse range of topics</p>
+                
+                <div id="categoriesContainer" class="row g-4">
+                    <!-- Categories will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Research Section -->
+        <section id="research" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-4 fw-bold mb-2 text-center">Research Notes</h2>
+                <p class="text-center text-muted mb-5">Access curated research papers and scientific findings</p>
+                
+                <div id="researchContainer" class="row g-4">
+                    <!-- Research notes will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-4 fw-bold mb-2 text-center">Get in Touch</h2>
+                        <p class="text-center text-muted mb-5">Have questions or collaboration ideas? We'd love to hear from you!</p>
+                        
+                        <form id="contactForm" class="needs-validation">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter a message.</div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-dna"></i> BioWithKhushi
+                    </h5>
+                    <p>Exploring the frontiers of biology, genetics, and biotechnology with expert insights.</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#articles" class="text-decoration-none">Articles</a></li>
+                        <li><a href="#research" class="text-decoration-none">Research</a></li>
+                        <li><a href="#categories" class="text-decoration-none">Categories</a></li>
+                        <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://twitter.com" target="_blank" class="text-white text-decoration-none me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="text-white text-decoration-none me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="text-white text-decoration-none me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="bg-white">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 BioWithKhushi. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="main.js" defer></script>
+</body>
+</html>
